@@ -1,0 +1,80 @@
+.b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Adjust the value to control the curve */
+    padding: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+
+.first{
+    color: rgb(255, 255, 255);
+    padding-top: 171%;
+    padding-right: 10%;
+    font-size: 30px;
+}
+
+.second{
+    color: rgb(255, 255, 255);
+    padding-top: 171%;
+    padding-left: 40%;
+    font-size: 30px;
+}
+
+.third{
+    color: rgb(255, 255, 255);
+    padding-top: 171%;
+    padding-left: 90%;
+    font-size: 30px;
+}
+
+.fourth{
+    color: rgb(255, 255, 255);
+    padding-top: 171%;
+    padding-left: 130%;
+    font-size: 30px;
+}
+
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .first {
+      padding-right: 10%;
+    }
+    .second {
+      padding-left: 30%;
+    }
+    .third {
+      padding-left: 80%;
+    }
+    .fourth {
+      padding-left: 120%;
+    }
+  }
+  
+  /* For medium screens */
+  @media (max-width: 767px) {
+    .first, .second, .third, .fourth {
+      font-size: 15px;
+      padding-top: 95rem;
+    }
+
+    .second, .third, .fourth{
+      padding-right: 5%;
+    }
+
+    .first {
+      padding-right: -6%;
+    }
+  }
+  
+  /* For small screens */
+  @media (max-width: 480px) {
+    .first, .second, .third, .fourth {
+      font-size: 20px;
+      padding-top: 5px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  

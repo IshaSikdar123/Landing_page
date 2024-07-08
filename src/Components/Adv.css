@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.title {
+    height: 190vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 28%;
+}
+
+.big {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 200%;
+    padding-left: 57%;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.wrapper {
+    width: 75%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.1);
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-bottom: -5rem;
+
+}
+
+.wow{
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+.cust {
+    left: 80%;
+    padding-bottom: 5%;
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(#7bd3d5, #676a7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 60px;
+}
+
+.roadmap-text {
+    left: 78%;
+    padding-top: 7%;
+    text-align: start;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    background: linear-gradient(#94D8D9, #587E8D, #4F5265);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.your {
+    left: 77.5%;
+    text-align: start;
+    padding-top: 30%;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.neww {
+    width: 100%;
+    height: 110%;
+    bottom: 85rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #94D8D9;
+}
+
+.code {
+    right: 50%;
+    padding-bottom: 28%;
+    font-size: 65px;
+    background: #94D8D9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.std {
+    right: 50%;
+    padding-bottom: 17%;
+    font-size: 65px;
+    background: linear-gradient(#718282, #2f7997, #01020d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dive {
+    text-wrap: wrap;
+    width: 40%;
+    left: 25%;
+    text-align: start;
+    padding-top: 15%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.lappy {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 40%;
+    margin-top: 15%;
+    overflow: hidden; /* Ensures the video does not overflow the container */
+  }
+  
+  .lap { 
+    width: 100%;
+    height: 100%; /* Make the video take up the full height of the container */
+    
+  }
+  
+  .commi{
+    background-color: transparent;
+    position: absolute;
+    left: 51rem;
+    bottom: 68rem;
+  }
+  
+  .soott {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    color: #60bfcf;
+  }
+
+@keyframes scrollImage {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.ew{ 
+    z-index: 2000;
+    right: 2%;
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Hide the overflow to show only the part of the image in the container */
+    position: relative; /* Needed for the overlay to position correctly */
+}
+
+.ew::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+    z-index: 1; /* Ensure the overlay is on top */
+}
+
+.roadmap-image {
+    width: 100%; /* Ensure the image width fits the container */
+    height: auto; /* Allow the image to retain its natural height */
+    animation: scrollImage 12s linear infinite; /* Adjust the duration as needed */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+
+.btn11 {
+    z-index: 3000;
+    position: absolute;
+    bottom: -172rem;
+    left: 28%;
+    transform: translateX(-50%);
+    width: 14%;
+    padding: 10px 6px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 21px;
+    cursor: pointer;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn11:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        height: hidden; /* Adjust height for smaller screens */
+    }
+
+    .big {
+        font-size: 20px;
+        margin-top: 25rem;
+    }
+
+    .wrapper{
+        height: 50rem;
+        width: 90%;
+        position: static;
+        margin-bottom: 310rem;
+    }
+    
+
+    .scroll-container{
+        height: 50rem;
+        overflow: hidden;
+    }
+
+    .cust {
+        font-size: 30px;
+        margin-top: 110rem;
+        margin-left: -3%;
+    }
+
+    .roadmap-text {
+        font-size: 30px;
+        margin-top: 111rem;
+        margin-left: -4%;
+    }
+
+    .your{
+        text-wrap: wrap;
+        font-size: 15px;
+        margin-top: 115rem;
+        margin-left: -3%;
+    }
+
+    .neww{
+        width: 100%;
+        position: static;
+        margin-top: 10rem;
+        height: 50rem;
+    }
+
+    .code {
+        font-size: 25px;
+        margin-top: 180rem;
+    }
+
+    .std {
+        font-size: 25px;
+        margin-top: 180rem;
+    }
+
+    .dive {
+        width: 40%;
+        left: 28%;
+        font-size: 12px;
+        margin-top: 180rem;
+    }
+
+    .lappy {
+        width: 70%;
+        left: 24%;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        padding-top: 5%;
+    }
+
+    .big {
+        font-size: 20px;
+        padding-top: 40%;
+        padding-left: 5%;
+    }
+
+    .cust, .roadmap-text, .code, .std {
+        font-size: 30px;
+    }
+
+    .dive {
+        width: 80%;
+        left: 10%;
+        font-size: 10px;
+    }
+
+    .lappy {
+        left: 5%;
+        margin-top: 2%;
+    }
+
+    .ew {
+        width: 80%;
+        height: auto;
+    }
+
+    .roadmap-image {
+        animation: scrollImage 10s linear infinite; /* Adjusted for smaller screens */
+    }
+}

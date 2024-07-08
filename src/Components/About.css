@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+.cont {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Adjust the value to control the curve */
+}
+
+.text {
+  padding-top: 95%;
+  padding-left: 58%;
+  font-size: 48px; /* Increase the font size */
+  color: rgb(255, 255, 255); /* Change the color of the text */
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.text1 {
+  padding-top: 120%;
+  left: 51%;
+  font-size: 20px; /* Increase the font size */
+  color: rgb(255, 255, 255); /* Change the color of the text */
+  text-align: center; /* Center the text horizontally */
+  width: 65%; /* Set the width to 33.33% to fit three lines */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: 'Inter', sans-serif; /* Use desired font family */
+  font-weight: normal;
+}
+
+.btnnn{
+  z-index: 3000;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12%;
+  padding: 10px 8px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  cursor: pointer;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btnnn:hover {
+  background-color: rgba(128, 128, 128, 0.3); /* Set background color with opacity */
+}
+
+.glowis{
+  position: absolute;
+  top: 90rem;
+  left: 72.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 2vw; /* Increase font size for smaller screens */
+  }
+
+  .text1 {
+    font-size: 2vw; /* Increase font size for smaller screens */
+  }
+
+  .btn {
+    font-size: 2vw; /* Increase font size for smaller screens */
+    width: 30%; /* Adjust button width for smaller screens */
+    bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 10vw; /* Further increase font size for very small screens */
+  }
+
+  .text1 {
+    font-size: 6vw; /* Further increase font size for very small screens */
+  }
+
+  .btn {
+    font-size: 6vw; /* Further increase font size for very small screens */
+    width: 70%; /* Adjust button width for very small screens */
+  }
+}
