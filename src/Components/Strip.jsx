@@ -15,5 +15,5 @@ function Strip() {
     </div>
   ); 
 }
-
+ 
 export default Strip;

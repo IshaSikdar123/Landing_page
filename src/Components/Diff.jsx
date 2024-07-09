@@ -4,14 +4,15 @@ import dglow from './dglow.png';
 
 const Diff = () => {
     const features = [
-        { name: "100+ Practice Questions", others: true, datasense: true },
-        { name: "Guided Format", others: true, datasense: true },
-        { name: "Data Analyst Focused", others: false, datasense: true },
-        { name: "Video Explanations", others: false, datasense: true },
-        { name: "Full Length Courses", others: false, datasense: true },
-        { name: "Multiple Programming Languages", others: true, datasense: true },
-        { name: "Expert Experienced Instructors", others: true, datasense: true },
-        { name: "All in One Platform", others: false, datasense: true }
+        { name: "Gamification Learning", others: false, datasense: true},
+        { name: "200+ Practice Questions", others: false, datasense: true },
+        { name: "Full Length Courses", others: true, datasense: true },
+        { name: "Guided Format", others: false, datasense: true },
+        { name: "Data Analystics Focused", others: true, datasense: true },
+        { name: "Job Placements", others: false, datasense: true },
+        { name: "Video Explanations", others: true, datasense: true },
+        { name: "Mock Interviews", others: false, datasense: true },    
+        { name: "All in One Platform", others: false, datasense: true },      
     ];
 
     return (
@@ -19,7 +20,7 @@ const Diff = () => {
             <h1 className='te'>What's the difference</h1>
             <div className="comparison-table">
                 <img src={dglow} alt=""  className='dglow'/>
-            <div className='cdd'>
+            <div className='cdd'> 
             <h1 className='ot'> Others </h1>
             <h1 className='da'> Datasense</h1></div>
                 {features.map((feature, index) => (

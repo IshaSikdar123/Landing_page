@@ -51,7 +51,7 @@ const Video = () => {
                 <span className='emo'>❤️ 📢</span>
               </h1>
             </div>
-          </div>
+          </div> 
 
           {/* Video 2 */}
           <div className='dimag'>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
 .title {
     height: 190vh;
     display: flex;
@@ -12,12 +11,13 @@
 }
 
 .big {
+    position: absolute;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 200%;
-    padding-left: 57%;
+    top: 175rem;
     font-size: 40px;
     white-space: nowrap;
+    left: 50rem;
 }
 
 .wrapper {
@@ -28,50 +28,50 @@
     border-radius: 20px;
     border: 1px solid white;
     margin-bottom: -5rem;
-
 }
 
-.wow{
+.wow {
     position: relative;
     margin-bottom: 2rem;
-
 }
+
 .cust {
-    left: 80%;
-    padding-bottom: 5%;
+    left: 65%;
+    top: 16rem;
     text-align: start;
     font-family: 'Inter', sans-serif;
     background: linear-gradient(#7bd3d5, #676a7c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .roadmap-text {
-    left: 78%;
-    padding-top: 7%;
+    left: 65.5%;
+    top: 22rem;
     text-align: start;
     font-family: 'Inter', sans-serif;
-    font-size: 64px;
+    font-size: 60px;
     background: linear-gradient(#94D8D9, #587E8D, #4F5265);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .your {
-    left: 77.5%;
+    left: 65.8%;
     text-align: start;
     padding-top: 30%;
     font-family: 'Inter', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: normal;
+    color: white;
 }
 
 .neww {
     width: 100%;
     height: 110%;
-    bottom: 85rem;
+    bottom: 73rem;
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     border-radius: 20px;
@@ -79,8 +79,9 @@
 }
 
 .code {
-    right: 50%;
-    padding-bottom: 28%;
+    position: absolute;
+    right: 69%;
+    top: 18rem;
     font-size: 65px;
     background: #94D8D9;
     -webkit-background-clip: text;
@@ -89,8 +90,9 @@
 }
 
 .std {
-    right: 50%;
-    padding-bottom: 17%;
+    position: absolute;
+    right: 69%;
+    top: 24rem;
     font-size: 65px;
     background: linear-gradient(#718282, #2f7997, #01020d);
     -webkit-background-clip: text;
@@ -99,12 +101,14 @@
 }
 
 .dive {
+    z-index: 2000;
+    color: white;
     text-wrap: wrap;
-    width: 40%;
-    left: 25%;
+    width: 30%;
+    left: 5%;
     text-align: start;
-    padding-top: 15%;
-    font-size: 14px;
+    top: 35rem;
+    font-size: 17px;
     font-weight: normal;
 }
 
@@ -115,26 +119,25 @@
     left: 40%;
     margin-top: 15%;
     overflow: hidden; /* Ensures the video does not overflow the container */
-  }
-  
-  .lap { 
+}
+
+.lap { 
     width: 100%;
     height: 100%; /* Make the video take up the full height of the container */
-    
-  }
-  
-  .commi{
+}
+
+.commi {
     background-color: transparent;
     position: absolute;
     left: 51rem;
-    bottom: 68rem;
-  }
-  
-  .soott {
+    bottom: 62rem;
+}
+
+.soott {
     font-family: 'Montserrat', sans-serif;
     font-size: 55px;
     color: #60bfcf;
-  }
+}
 
 @keyframes scrollImage {
     0% {
@@ -145,7 +148,7 @@
     }
 }
 
-.ew{ 
+.ew { 
     z-index: 2000;
     right: 2%;
     width: 60%;
@@ -175,12 +178,11 @@
     object-fit: cover; /* Ensures the image covers the container without stretching */
 }
 
-
 .btn11 {
     z-index: 3000;
     position: absolute;
-    bottom: -172rem;
-    left: 28%;
+    bottom: -185rem;
+    left: 25.5%;
     transform: translateX(-50%);
     width: 14%;
     padding: 10px 6px;
@@ -193,120 +195,200 @@
     font-weight: 600;
     font-size: 18px;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn11:hover {
+}
+
+.btn11:hover {
     background-color: rgba(255, 255, 255, 0.2);
-  }
+}
 
-
-
-@media screen and (max-width: 768px) {
-
-    .title {
-        height: hidden; /* Adjust height for smaller screens */
-    }
-
+/* For Large Screens */
+@media screen and (min-width: 1024px) {
     .big {
+        font-size: 50px;
+        left: 45rem;
+    }
+
+    .cust, .roadmap-text {
+        font-size: 50px;
+    }
+
+    .your {
         font-size: 20px;
-        margin-top: 25rem;
     }
 
-    .wrapper{
-        height: 50rem;
-        width: 90%;
-        position: static;
-        margin-bottom: 310rem;
-    }
-    
-
-    .scroll-container{
-        height: 50rem;
-        overflow: hidden;
-    }
-
-    .cust {
-        font-size: 30px;
-        margin-top: 110rem;
-        margin-left: -3%;
-    }
-
-    .roadmap-text {
-        font-size: 30px;
-        margin-top: 111rem;
-        margin-left: -4%;
-    }
-
-    .your{
-        text-wrap: wrap;
-        font-size: 15px;
-        margin-top: 115rem;
-        margin-left: -3%;
-    }
-
-    .neww{
-        width: 100%;
-        position: static;
-        margin-top: 10rem;
-        height: 50rem;
-    }
-
-    .code {
-        font-size: 25px;
-        margin-top: 180rem;
-    }
-
-    .std {
-        font-size: 25px;
-        margin-top: 180rem;
+    .code, .std {
+        font-size: 55px;
     }
 
     .dive {
-        width: 40%;
-        left: 28%;
-        font-size: 12px;
-        margin-top: 180rem;
+        font-size: 18px;
     }
 
-    .lappy {
-        width: 70%;
-        left: 24%;
-        margin-top: 20%;
+    .soott {
+        font-size: 65px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .title {
-        padding-top: 5%;
-    }
-
+/* For Mac Screens (typically around 1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
     .big {
-        font-size: 20px;
-        padding-top: 40%;
-        padding-left: 5%;
+        font-size: 45px;
+        left: 55rem;
     }
 
-    .cust, .roadmap-text, .code, .std {
-        font-size: 30px;
+    .cust, .roadmap-text {
+        font-size: 65px;
+    }
+
+    .your {
+        font-size: 18px;
+    }
+
+    .code, .std {
+        font-size: 70px;
     }
 
     .dive {
+        font-size: 18px;
+    }
+
+    .soott {
+        font-size: 60px;
+    }
+}
+
+/* For Mobile Screens */
+@media screen and (max-width: 768px) {
+    .big {
+        font-size: 6vw;
+        left: 50%;
+        top: 180vh;
+        transform: translateX(-50%);
+    }
+
+    .cust, .roadmap-text {
+        font-size: 10vw;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
+    .your {
+        font-size: 4vw;
+        left: 50%;
+        top: auto;
+        padding-top: 10%;
+        transform: translateX(-50%);
+    }
+
+    .code, .std {
+        font-size: 12vw;
+        right: auto;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
+    .dive {
+        font-size: 4vw;
         width: 80%;
-        left: 10%;
-        font-size: 10px;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
     }
 
     .lappy {
-        left: 5%;
-        margin-top: 2%;
+        width: 90%;
+        left: 50%;
+        margin-top: 25%;
+        transform: translateX(-50%);
     }
 
-    .ew {
-        width: 80%;
-        height: auto;
+    .commi {
+        left: 50%;
+        bottom: auto;
+        transform: translateX(-50%);
     }
 
-    .roadmap-image {
-        animation: scrollImage 10s linear infinite; /* Adjusted for smaller screens */
+    .soott {
+        font-size: 8vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn11 {
+        width: 50%;
+        left: 50%;
+        font-size: 4vw;
+        bottom: -200vh;
+        transform: translateX(-50%);
+    }
+}
+
+/* For Extra Small Mobile Screens */
+@media screen and (max-width: 480px) {
+    .big {
+        font-size: 7vw;
+        left: 50%;
+        top: 180vh;
+        transform: translateX(-50%);
+    }
+
+    .cust, .roadmap-text {
+        font-size: 12vw;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
+    .your {
+        font-size: 5vw;
+        left: 50%;
+        top: auto;
+        padding-top: 10%;
+        transform: translateX(-50%);
+    }
+
+    .code, .std {
+        font-size: 15vw;
+        right: auto;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
+    .dive {
+        font-size: 5vw;
+        width: 90%;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+    }
+
+    .lappy {
+        width: 95%;
+        left: 50%;
+        margin-top: 25%;
+        transform: translateX(-50%);
+    }
+
+    .commi {
+        left: 50%;
+        bottom: auto;
+        transform: translateX(-50%);
+    }
+
+    .soott {
+        font-size: 9vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn11 {
+        width: 60%;
+        left: 50%;
+        font-size: 5vw;
+        bottom: -200vh;
+        transform: translateX(-50%);
     }
 }

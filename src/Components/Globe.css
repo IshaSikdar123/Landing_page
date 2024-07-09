@@ -137,6 +137,7 @@
 }
 
 .join{
+    z-index: 5000;
     background-color: rgb(255, 255, 255);
     position: absolute;
     display: flex;
@@ -144,8 +145,26 @@
     align-items: end;
     left: 9rem;
     top: 35rem; /* Initial position */
-    padding: 8px 32px;
+    
     border-radius: 5px;
     cursor: pointer;
     color: rgb(0, 0, 0);
+}
+
+.channels{
+    z-index: 5000;
+}
+
+.baba{
+    z-index: 2000; 
+    color: black;
+}
+
+.uri{
+    width: 8vw;
+    height: 2.5vh;
+    font-size: 20px;
+    color: black;
+    left: 1px;
+    top: 5px;
 }

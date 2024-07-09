@@ -5,14 +5,13 @@ import Roadmap from './Roadmap.png';
 import { useAuth0 } from '@auth0/auth0-react';
 
 
-
+  
 const Adv = () => {
   const { loginWithPopup, logout, user, isAuthenticated } = useAuth0();
-
+ 
   return (
     <div className='title'>
       <p className='big'>THE DATASENSE ADVANTAGES</p>
-
       <div className='wrapper'>
         <div className='wow'>
         <p className='cust'>Customized</p>

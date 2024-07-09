@@ -3,6 +3,7 @@ import './Game.css';
 import env from './env.mp4'
 
 
+
 function Game() {
   return (
     <div className='g'>
@@ -14,11 +15,21 @@ function Game() {
         </div>
       </div>
       <div className='gaming'>
-      <div className="round"></div>
-      <div className="round"></div>
-      <div className="round"></div>
-      <div className="round"></div>
-      <div className="round"></div>
+      <div className="round">
+        <h1 className='learns'>Excel learning</h1>
+      </div>
+      <div className="round">
+        <h1 className='learnss'> Test Series </h1>
+      </div>
+      <div className="round">
+        <h1 className='learnsss'>AI Bot</h1>
+      </div>
+      <div className="round">
+        <h1 className='learnssss'>Fun Learning</h1>
+      </div>
+      <div className="round">
+        <h1 className='learnsssss'>Streaks</h1>
+      </div>
     </div>
     </div>
   )

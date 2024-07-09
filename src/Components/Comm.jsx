@@ -23,4 +23,4 @@ function Comm() {
   )
 }
 
-export default Comm
+export default Comm;

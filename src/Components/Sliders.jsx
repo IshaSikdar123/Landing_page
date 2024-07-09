@@ -17,7 +17,7 @@ import path_to_image4 from './path_to_image4.jpg';
 import path_to_image5 from './path_to_image5.jpg';
 import back from './back.mp4';
 
-
+ 
 const images = [path_to_image1, path_to_image2, path_to_image3, path_to_image4, path_to_image5];
   
 const Sliders = () => {

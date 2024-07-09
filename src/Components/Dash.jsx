@@ -7,7 +7,7 @@ import gloww1 from './gloww1.png';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const jobTitles = ['Data Analyst', 'Data Engineer', 'Data Scientist'];
-
+ 
 
 const Dash = () => {
   const { loginWithPopup, logout, user, isAuthenticated } = useAuth0();
@@ -43,10 +43,11 @@ const Dash = () => {
 
     return () => clearTimeout(typingTimeout);
   }, [charIndex, index, isDeleting]);
-
+ 
   return (
     <div className="cont">
-      <p>Elevate Your Career<br /> as a <span className="animated-text">{currentTitle}</span> <br />with
+      <p className='peon'>Elevate Your Career as a 
+      <span className="animated-text">{currentTitle}</span> <br />with
       <span className='mainn'> DataSense!</span>
       </p>
       <p className='small'>Empower  yourself with cutting-edge skills, network<br /> with industry experts, and ignite your data career<br /> journey.</p>

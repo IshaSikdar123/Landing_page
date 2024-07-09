@@ -52,8 +52,10 @@
 }
 
 .round {
-  left: 10px;
-  bottom: 14rem;
+  color: white;
+  text-wrap: wrap;
+  left: 20px;
+  bottom: 4rem;
   position: relative;
   z-index: 2;
   width: 120px; /* Width of circle */
@@ -68,7 +70,59 @@
   border-bottom: 2px solid #87e7e1;
 }
 
+.learns{
+  color: white;
+  z-index: 2000;
+  font-size: 20px;
+  position: absolute;
+  left: 1%;
+  text-align: center;
+  top: 20%;
+}
 
+.learnss{
+  width: 3vw;
+  color: white;
+  z-index: 2000;
+  font-size: 20px;
+  position: absolute;
+  left: 28%;
+  text-align: center;
+  top: 20%;
+}
+
+.learnsss{
+  width: 3vw;
+  color: white;
+  z-index: 2000;
+  font-size: 20px;
+  position: absolute;
+  left: 28%;
+  text-align: center;
+  top: 20%;
+}
+
+.learnssss{
+  width: 4.5vw;
+  color: white;
+  z-index: 2000;
+  font-size: 20px;
+  position: absolute;
+  left: 18%;
+  text-align: center;
+  top: 20%;
+}
+
+.learnsssss{
+  width: 4.5vw;
+  color: white;
+  z-index: 2000;
+  font-size: 20px;
+  position: absolute;
+  left: 18%;
+  text-align: center;
+  top: 35%;
+}
 
 @media screen and (max-width: 768px) {
   .h {

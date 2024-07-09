@@ -28,10 +28,16 @@ function Globe() {
         <img src={simmer} alt="sim" className='sim' />
         <h1 className='meet'>Meetups</h1>
         <span className='with'> Engage with fellow learners </span>
-        <button className='join'>Join Now</button>
+        <button className='join'>
+          <div className='baba'>
+          <a href="https://whatsapp.com/channel/0029Vagfa03KGGGJmVi53e1w" target="_blank" rel="noopener noreferrer" className='channels'>
+          <h1 className='uri'>Join Now</h1>
+          </a>    
+          </div>
+        </button>
      </div>
     </div>
   )
-}
+} 
 
 export default Globe

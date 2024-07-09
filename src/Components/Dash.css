@@ -40,23 +40,23 @@
   overflow: hidden;
 }
 
-p {
-  color: rgb(255, 255, 255);
+.peon {
   position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%); 
-  margin: 0;
-  z-index: 3000;
+  color: rgb(255, 255, 255);
+  left: 10rem;
+  margin-bottom: 30rem;
+  z-index: 5000;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 35px;
+  width: 25vw; 
 }
 
 .mainn{
   position: absolute;
-  font-size: 10px;
-  left: 17rem;
+  font-size: 35px;
+  left: 14rem;
+  top: 12.5rem;
   color: #58d7ed;
 }
 
@@ -64,8 +64,8 @@ p {
   width: 30%;
   color: rgb(255, 255, 255);
   position: absolute;
-  top: 60%;
-  left: 25%;
+  top: 62%;
+  left: 22%;
   transform: translate(-50%, -50%);
   margin: 0;
   z-index: 2;
@@ -77,12 +77,12 @@ p {
 
 .animated-text {
   position: absolute;
-  bottom: 15.4rem;
-  margin-bottom:-20% ;
+  bottom: 18.7rem;
+  margin-bottom:-35% ;
   left: 35%;
   animation: blinkCursor 10s steps(40) infinite normal;
   color: #ffffff;
-  font-size: 2.7vw;
+  font-size: 35px;
 }
 
 @keyframes blinkCursor {
@@ -144,6 +144,71 @@ p {
   box-shadow: 0 0 5px #0c6074, 0 0 50px #3caabf, 0 0 200px #3caabf;
 }
 
+/* For Large Screens */
+@media screen and (min-width: 1024px) {
+  .peon {
+    font-size: 35px;
+    left: 11rem;
+  }
+
+  .mainn {
+    font-size: 35px;
+    left: 14rem;
+  }
+
+  .small {
+    font-size: 15px;
+  }
+
+  .animated-text {
+    font-size: 35px;
+    left: 35%;
+  }
+
+  .btn1 {
+    width: 12%;
+    font-size: 18px;
+  }
+
+  .btn2 {
+    width: 14%;
+    font-size: 20px;
+  }
+}
+
+/* For Mac Screens (typically around 1280px) */
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .peon {
+    font-size: 40px;
+    left: 12rem;
+  }
+
+  .mainn {
+    font-size: 40px;
+    left: 18rem;
+  }
+
+  .small {
+    font-size: 18px;
+  }
+
+  .animated-text {
+    font-size: 40px;
+    left: 38%;
+  }
+
+  .btn1 {
+    width: 11%;
+    font-size: 17px;
+  }
+
+  .btn2 {
+    width: 13%;
+    font-size: 19px;
+  }
+}
+
+/* For Mobile Screens */
 @media screen and (max-width: 768px) {
   p {
     font-size: 3.5vw;
@@ -182,7 +247,6 @@ p {
   }
 
  .glow, .gloww1 {
-
     max-width: 90%;
     height: 50%;
   }
@@ -200,7 +264,7 @@ p {
   }
 }
 
-
+/* For Extra Small Mobile Screens */
 @media screen and (max-width: 480px) {
   p {
     font-size: 3.5vw;
@@ -239,7 +303,6 @@ p {
   }
 
  .glow, .gloww1 {
-
     max-width: 90%;
     height: 50%;
   }
