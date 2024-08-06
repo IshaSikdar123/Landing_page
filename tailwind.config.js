@@ -4,7 +4,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1920px', // Customize this value to your desired 3xl breakpoint
+      },
+      colors: {
+        dash : '#00FFFF',
+      }
+      
+    },
   },
   plugins: [],
 }

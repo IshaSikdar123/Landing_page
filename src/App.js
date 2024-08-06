@@ -28,24 +28,9 @@ import Later from './Components/Later';
 function App() {
   return (
     <div>
-      <Navbar />
-      <Strip />
+
       <Dash />
-      <Move />
-      <About />
-      <Count />
-      <Adv />
-      <Later />
-      <Game />
-      <Diff />
-      <Sliders />
-      <Comm />
-      <Globe />
-      <People />
-      <Video/>
-      <Stick />
-      <Down />
-      <Footer />
+   
     </div>
   );
 }

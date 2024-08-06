@@ -21,9 +21,9 @@ const Navbar = () => {
       <div className=" absolute block sm:hidden text-white text-5xl cursor-pointer right-[8rem]" onClick={toggleSidebar}>
         &#9776;
       </div>
-      <div className={`nav-links flex-col sm:flex-row sm:flex ${sidebarOpen ? 'flex' : 'hidden'} absolute sm:relative top-8 sm:top-auto bg-gray-700 bg-opacity-90 sm:bg-opacity-0 w-full sm:w-auto`}>
+      <div className={`nav-links flex-col sm:flex-col sm:flex ${sidebarOpen ? 'flex' : 'hidden'} relative sm:relative top-12 sm:top-auto bg-gray-700 bg-opacity-90 sm:bg-opacity-0 w-full sm:w-auto h-full sm:h-auto`}>
         <a className=' absolute text-1xl p-2 sm:p-2.9 sm:top-0.5 sm:left-[-110rem] ' href="dash_b">My Dashboard</a>
-        <div className="dropdown relative group">
+        <div className="dropdown relative group"> 
           <a href="#" className=" absolute text-1xl p-2 sm:p-2.9 top-10 sm:top-0.5 sm:left-[-90rem]  ">Learning Path &#9662;</a>
           <div className="dropdown-content absolute sm:left-[-90rem] hidden group-hover:block bg-gray-700 bg-opacity-80 w-64 mt-1 sm:mt-12 rounded-lg">
             <a href="#" className="block p-2 hover:bg-gray-600">AI LEARNING PATH</a>
@@ -48,8 +48,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        <a href="price" className=" absolute text-1xl p-2 sm:p-2.9  top-20 sm:top-0.5 sm:left-[-53rem]">Pricing</a>
-        <a href="cont" className=" absolute text-1xl p-2 sm:p-2.9 sm:top-0.5 sm:left-[-39rem]">Contact Us</a>
+        <a href="price" className=" absolute text-1xl p-2 sm:p-2.9  top-32 sm:top-0.5 sm:left-[-53rem]">Pricing</a>
+        <a href="cont" className=" absolute text-1xl p-2 sm:p-2.9 top-4 sm:top-0.5 sm:left-[-39rem]">Contact Us</a>
         <div className="right-buttons flex flex-col sm:flex-row items-center">
           {isAuthenticated ? (
             <>
